@@ -1,0 +1,97 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>House of V | Where Vision Leads Action</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">House of V</div>
+    <ul class="nav-links">
+      <li><a href="#partner">Partner With Us</a></li>
+      <li><a href="#donate">Donate</a></li>
+      <li><a href="#careers">Careers / Learnerships</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="logo-large">♞🔥</div>
+      <h1>House of V</h1>
+      <p class="tagline">Where Vision Leads Action</p>
+      <button id="learn-more">Learn More</button>
+    </div>
+  </section>
+
+  <!-- About / Story Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About House of V</h2>
+      <p>
+        House of V is a nonprofit corporation dedicated to strategic empowerment, innovation, and community development. 
+        Our mission is to transform lives by combining vision with decisive action.
+      </p>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section class="programs" id="programs">
+    <div class="container">
+      <h2>Our Strategic Moves</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="icon">♙👑</div>
+          <h3>Education</h3>
+          <p>We invest in education as the foundation for progress, unlocking the potential of every learner.</p>
+        </div>
+        <div class="card">
+          <div class="icon">♗</div>
+          <h3>Empowerment</h3>
+          <p>Through skills training and leadership development, we empower individuals to create their own future.</p>
+        </div>
+        <div class="card">
+          <div class="icon">♖</div>
+          <h3>Innovation</h3>
+          <p>We support entrepreneurship and innovation, building structures that sustain communities.</p>
+        </div>
+        <div class="card">
+          <div class="icon">♔</div>
+          <h3>Community</h3>
+          <p>Our work centers on community, ensuring all progress leads back to collective upliftment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer / Call to Action -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 House of V | All Rights Reserved</p>
+    </div>
+  </footer>
+
+<script>
+  // Expand About Section on Learn More click
+  const learnBtn = document.getElementById('learn-more');
+  const aboutSection = document.querySelector('.about');
+  const programsSection = document.querySelector('.programs');
+
+  aboutSection.style.display = 'none';
+  programsSection.style.display = 'none';
+
+  learnBtn.addEventListener('click', () => {
+    aboutSection.style.display = 'block';
+    programsSection.style.display = 'block';
+    learnBtn.style.display = 'none';
+    window.scrollTo({ top: aboutSection.offsetTop, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
